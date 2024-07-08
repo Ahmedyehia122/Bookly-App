@@ -1,4 +1,3 @@
-import 'package:bookly_app/core/constants/colors.dart';
 import 'package:bookly_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,8 +14,7 @@ class BooklyApp extends StatelessWidget {
       splitScreenMode: true,
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData.dark()
-            .copyWith(scaffoldBackgroundColor: AppColors.kPrimaryColor),
+        theme: ThemeData.dark(),
         home: const SplashView(),
       ),
     );
