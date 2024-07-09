@@ -1,45 +1,25 @@
+import 'package:bookly_app/core/constants/styles.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/custom_app_bar.dart';
-import 'package:bookly_app/features/home/presentation/views/widgets/custom_book_item.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/custom_books_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomAppBar(),
-          CustomBooksListView(),
+          const CustomAppBar(),
+          const CustomBooksListView(),
+          Text(
+            'Best seller',
+            style: AppStyles.mediumTitle,
+          )
         ],
-      ),
-    );
-  }
-}
-
-class CustomBooksListView extends StatelessWidget {
-  const CustomBooksListView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(left: 20.w, top: 15.h),
-      child: SizedBox(
-        height: 180.h,
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          physics: const BouncingScrollPhysics(),
-          itemCount: 10,
-          itemBuilder: (BuildContext context, int index) {
-            return Padding(
-              padding: EdgeInsets.only(right: 10.w),
-              child: const CustomBookItem(),
-            );
-          },
-        ),
       ),
     );
   }
