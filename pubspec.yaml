@@ -67,24 +67,41 @@ flutter:
   fonts:
     - family: Montserrat
       fonts:
-        - asset: assets/fonts/Montserrat-Black.ttf
-        - asset: assets/fonts/Montserrat-BlackItalic.ttf
-        - asset: assets/fonts/Montserrat-Bold.ttf
-        - asset: assets/fonts/Montserrat-BoldItalic.ttf
-        - asset: assets/fonts/Montserrat-ExtraBold.ttf
-        - asset: assets/fonts/Montserrat-ExtraBoldItalic.ttf
-        - asset: assets/fonts/Montserrat-ExtraLight.ttf
-        - asset: assets/fonts/Montserrat-ExtraLightItalic.ttf
-        - asset: assets/fonts/Montserrat-Italic.ttf
-        - asset: assets/fonts/Montserrat-Light.ttf
-        - asset: assets/fonts/Montserrat-LightItalic.ttf
-        - asset: assets/fonts/Montserrat-Medium.ttf
-        - asset: assets/fonts/Montserrat-MediumItalic.ttf
-        - asset: assets/fonts/Montserrat-Regular.ttf
-        - asset: assets/fonts/Montserrat-SemiBold.ttf
-        - asset: assets/fonts/Montserrat-SemiBoldItalic.ttf
-        - asset: assets/fonts/Montserrat-Thin.ttf
-        - asset: assets/fonts/Montserrat-ThinItalic.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Black.ttf
+        - asset: assets/fonts/montserrat/Montserrat-BlackItalic.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Bold.ttf
+        - asset: assets/fonts/montserrat/Montserrat-BoldItalic.ttf
+        - asset: assets/fonts/montserrat/Montserrat-ExtraBold.ttf
+        - asset: assets/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf
+        - asset: assets/fonts/montserrat/Montserrat-ExtraLight.ttf
+        - asset: assets/fonts/montserrat/Montserrat-ExtraLightItalic.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Italic.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Light.ttf
+        - asset: assets/fonts/montserrat/Montserrat-LightItalic.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Medium.ttf
+        - asset: assets/fonts/montserrat/Montserrat-MediumItalic.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Regular.ttf
+        - asset: assets/fonts/montserrat/Montserrat-SemiBold.ttf
+        - asset: assets/fonts/montserrat/Montserrat-SemiBoldItalic.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Thin.ttf
+        - asset: assets/fonts/montserrat/Montserrat-ThinItalic.ttf
+
+    - family: Playfair Display
+      fonts:
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Black.ttf      
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-BlackItalic.ttf     
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Bold.ttf      
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-BoldItalic.ttf      
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-ExtraBold.ttf     
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-ExtraBoldItalic.ttf      
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Italic.ttf      
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Medium.ttf      
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-MediumItalic.ttf      
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Regular.ttf      
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-MediumItalic.ttf      
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Regular.ttf     
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-SemiBold.ttf     
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-SemiBoldItalic.ttf     
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
