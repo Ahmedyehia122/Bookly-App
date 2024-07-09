@@ -1,4 +1,4 @@
 class AppFonts {
   static const montserrat = 'Montserrat';
-  static const playfairdisplay = 'Playfair Display';
+  static const playFairDisplay = 'Playfair Display';
 }

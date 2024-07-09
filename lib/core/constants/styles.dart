@@ -10,7 +10,7 @@ class AppStyles {
   static TextStyle textStyle20 = TextStyle(
       fontSize: 20.sp,
       fontWeight: FontWeight.normal,
-      fontFamily: AppFonts.playfairdisplay);
+      fontFamily: AppFonts.playFairDisplay);
   static TextStyle textStyle14 = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.normal,

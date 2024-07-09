@@ -18,7 +18,7 @@ class HomeViewBody extends StatelessWidget {
           const CustomAppBar(),
           const CustomBooksListView(),
           Padding(
-            padding: EdgeInsets.only(left: 20.w),
+            padding: EdgeInsets.only(left: 20.w, bottom: 20.h),
             child: Text(
               'Best seller',
               style: AppStyles.textStyle18,
@@ -38,13 +38,25 @@ class BestSellerListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 125.h,
-      child: const Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Row(
         children: [
           // image
-          BestSellerBookItem(),
+          const BestSellerBookItem(),
+          SizedBox(
+            width: 30.w,
+          ),
           Column(
-            children: [],
+            children: [
+              SizedBox(
+                width: 200.w,
+                child: Text(
+                  'Harry Potter and the Goblet of Fire',
+                  style: AppStyles.textStyle20,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              )
+            ],
           )
         ],
       ),
