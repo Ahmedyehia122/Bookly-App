@@ -1,3 +1,4 @@
+import 'package:bookly_app/core/constants/fonts.dart';
 import 'package:bookly_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -14,7 +15,12 @@ class BooklyApp extends StatelessWidget {
       splitScreenMode: true,
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData.dark(),
+        theme: ThemeData(
+          brightness: Brightness.dark,
+          fontFamily: AppFonts.montserrat,
+          // textTheme:
+          // GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme)
+        ),
         home: const SplashView(),
       ),
     );
