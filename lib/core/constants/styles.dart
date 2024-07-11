@@ -8,10 +8,11 @@ class AppStyles {
   );
   static TextStyle textStyle20 = TextStyle(
     fontSize: 20.sp,
-    fontWeight: FontWeight.normal,
+    // fontWeight: FontWeight.bold,
   );
   static TextStyle textStyle14 = TextStyle(
     fontSize: 14.sp,
+    color: Colors.grey,
     fontWeight: FontWeight.normal,
   );
   static TextStyle textStyle16 = TextStyle(

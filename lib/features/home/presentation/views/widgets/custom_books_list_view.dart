@@ -8,7 +8,7 @@ class CustomBooksListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 20.w, top: 10.h, bottom: 40.h),
+      padding: EdgeInsets.only(top: 10.h, bottom: 40.h),
       child: SizedBox(
         height: 180.h,
         child: ListView.builder(
