@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
+class HomeViewAppBar extends StatelessWidget {
+  const HomeViewAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
