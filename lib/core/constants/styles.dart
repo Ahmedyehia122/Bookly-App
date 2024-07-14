@@ -1,3 +1,4 @@
+import 'package:bookly_app/core/constants/fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,5 +19,10 @@ class AppStyles {
   static TextStyle textStyle16 = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.w500,
+  );
+  static TextStyle textStyle30 = TextStyle(
+    fontSize: 30.sp,
+    fontWeight: FontWeight.bold,
+    fontFamily: AppFonts.playFairDisplay,
   );
 }

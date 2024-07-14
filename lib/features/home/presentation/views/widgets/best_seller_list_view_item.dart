@@ -2,7 +2,7 @@ import 'package:bookly_app/core/constants/fonts.dart';
 import 'package:bookly_app/core/constants/router.dart';
 import 'package:bookly_app/core/constants/styles.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/best_seller_book_item.dart';
-import 'package:bookly_app/features/home/presentation/views/widgets/book_rating.dart';
+import 'package:bookly_app/core/customs/custom_book_rating.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -53,7 +53,7 @@ class BestSellerListViewItem extends StatelessWidget {
                         style: AppStyles.textStyle20
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
-                      const BookRating()
+                      const CustomBookRating()
                     ],
                   ),
                 ],
