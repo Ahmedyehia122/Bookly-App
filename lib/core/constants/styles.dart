@@ -13,7 +13,7 @@ class AppStyles {
   );
   static TextStyle textStyle14 = TextStyle(
     fontSize: 14.sp,
-    color: Colors.grey,
+    color: Colors.white.withOpacity(.5),
     fontWeight: FontWeight.normal,
   );
   static TextStyle textStyle16 = TextStyle(

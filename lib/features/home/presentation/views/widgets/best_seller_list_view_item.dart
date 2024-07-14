@@ -1,5 +1,5 @@
 import 'package:bookly_app/core/constants/fonts.dart';
-import 'package:bookly_app/core/constants/router.dart';
+import 'package:bookly_app/core/constants/routes.dart';
 import 'package:bookly_app/core/constants/styles.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/best_seller_book_item.dart';
 import 'package:bookly_app/core/customs/custom_book_rating.dart';

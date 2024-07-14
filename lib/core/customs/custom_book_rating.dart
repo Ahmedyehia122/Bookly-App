@@ -15,12 +15,12 @@ class CustomBookRating extends StatelessWidget {
           color: Colors.yellow,
           size: 14,
         ),
-        SizedBox(width: 4.w),
+        SizedBox(width: 10.w),
         Text(
           '4.8',
           style: AppStyles.textStyle16,
         ),
-        SizedBox(width: 2.w),
+        SizedBox(width: 5.w),
         Text(
           '(2203)',
           style: AppStyles.textStyle14,

@@ -34,8 +34,13 @@ class BookDetailsViewBody extends StatelessWidget {
               fontStyle: FontStyle.italic,
             ),
           ),
-          SizedBox(height: 6.h),
-          const CustomBookRating(),
+          SizedBox(height: 10.h),
+          const Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomBookRating(),
+            ],
+          ),
         ],
       ),
     );
