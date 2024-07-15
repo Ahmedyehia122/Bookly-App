@@ -4,6 +4,7 @@ import 'package:bookly_app/features/home/presentation/views/widgets/Books_detail
 import 'package:bookly_app/features/home/presentation/views/widgets/button_action.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/custom_book_image.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/custom_book_rating.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/similar_books_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -13,8 +14,9 @@ class BookDetailsViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 20.sp, right: 20.sp),
+      padding: EdgeInsets.only(left: 30.sp, right: 30.sp),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const BookDetailsViewAppBar(),
           Padding(
@@ -35,14 +37,21 @@ class BookDetailsViewBody extends StatelessWidget {
             ),
           ),
           SizedBox(height: 10.h),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              CustomBookRating(),
-            ],
-          ),
+          const CustomBookRating(),
           SizedBox(height: 30.h),
           const ButtonAction(),
+          SizedBox(height: 30.h),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'You can also like',
+              style: AppStyles.textStyle14.copyWith(
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          const SimilarBooksListView(),
         ],
       ),
     );

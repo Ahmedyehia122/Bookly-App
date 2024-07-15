@@ -20,7 +20,7 @@ class BooklyApp extends StatelessWidget {
           brightness: Brightness.dark,
           fontFamily: AppFonts.montserrat,
         ),
-        routerConfig: AppRouter.router,
+        routerConfig: AppRoutes.router,
         // home: const SplashView(),
       ),
     );

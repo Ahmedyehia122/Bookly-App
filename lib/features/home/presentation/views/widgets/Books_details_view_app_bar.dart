@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 
 class BookDetailsViewAppBar extends StatelessWidget {
   const BookDetailsViewAppBar({super.key});
@@ -10,7 +11,9 @@ class BookDetailsViewAppBar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         IconButton(
-            onPressed: () {},
+            onPressed: () {
+              GoRouter.of(context).pop();
+            },
             icon: const Icon(
               FontAwesomeIcons.xmark,
               color: Colors.white,
