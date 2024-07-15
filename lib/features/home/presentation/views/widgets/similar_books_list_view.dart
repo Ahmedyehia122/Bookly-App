@@ -8,7 +8,7 @@ class SimilarBooksListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 10.h, bottom: 40.h),
+      padding: EdgeInsets.only(top: 10.h, bottom: 10.h),
       child: SizedBox(
         height: 130.h,
         child: ListView.builder(

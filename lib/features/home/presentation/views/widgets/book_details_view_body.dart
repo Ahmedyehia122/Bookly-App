@@ -13,47 +13,58 @@ class BookDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(left: 30.sp, right: 30.sp),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          const BookDetailsViewAppBar(),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 90.w, vertical: 8.h),
-            child: const CustomBookImage(),
-          ),
-          SizedBox(height: 15.h),
-          Text(
-            'The Jungle Book',
-            style: AppStyles.textStyle30,
-          ),
-          Text(
-            'Rudyadr Kipling',
-            style: AppStyles.textStyle20.copyWith(
-              fontFamily: AppFonts.playFairDisplay,
-              color: Colors.white.withOpacity(.7),
-              fontStyle: FontStyle.italic,
-            ),
-          ),
-          SizedBox(height: 10.h),
-          const CustomBookRating(),
-          SizedBox(height: 30.h),
-          const ButtonAction(),
-          SizedBox(height: 30.h),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              'You can also like',
-              style: AppStyles.textStyle14.copyWith(
-                color: Colors.white,
-                fontWeight: FontWeight.w600,
+    return CustomScrollView(
+      slivers: <Widget>[
+        SliverFillRemaining(
+          hasScrollBody: false,
+          child: Padding(
+            padding: EdgeInsets.only(left: 30.sp, right: 30.sp),
+            child: Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const BookDetailsViewAppBar(),
+                  Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 90.w, vertical: 8.h),
+                    child: const CustomBookImage(),
+                  ),
+                  SizedBox(height: 15.h),
+                  Text(
+                    'The Jungle Book',
+                    style: AppStyles.textStyle30,
+                  ),
+                  Text(
+                    'Rudyadr Kipling',
+                    style: AppStyles.textStyle20.copyWith(
+                      fontFamily: AppFonts.playFairDisplay,
+                      color: Colors.white.withOpacity(.7),
+                      fontStyle: FontStyle.italic,
+                    ),
+                  ),
+                  SizedBox(height: 10.h),
+                  const CustomBookRating(),
+                  SizedBox(height: 30.h),
+                  const ButtonAction(),
+                  Expanded(child: SizedBox(height: 40.h)),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'You can also like',
+                      style: AppStyles.textStyle14.copyWith(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                  const SimilarBooksListView(),
+                  SizedBox(height: 30.h),
+                ],
               ),
             ),
           ),
-          const SimilarBooksListView(),
-        ],
-      ),
+        )
+      ],
     );
   }
 }
