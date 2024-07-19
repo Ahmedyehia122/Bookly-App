@@ -14,6 +14,7 @@ class HomeRepoImpl extends HomeRepo {
       fetchBestSellerBooksListview() async {
     try {
       List<dynamic> data =
+          // ignore: missing_required_param
           await api.get(url: 'https://potterapi-fedeperin.vercel.app/en/books');
       List<BookModel> books = [];
       for (var book in data) {
@@ -33,6 +34,7 @@ class HomeRepoImpl extends HomeRepo {
   Future<Either<Failure, List<BookModel>>> fetchBooksListView() async {
     try {
       List<dynamic> data =
+          // ignore: missing_required_param
           await api.get(url: 'https://potterapi-fedeperin.vercel.app/en/books');
       List<BookModel> books = [];
       for (var book in data) {
