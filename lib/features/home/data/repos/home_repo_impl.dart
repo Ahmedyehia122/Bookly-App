@@ -30,8 +30,21 @@ class HomeRepoImpl extends HomeRepo {
   }
 
   @override
-  Future<Either<Failure, List<BookModel>>> fetchBooksListView() {
-    // TODO: implement fetchBooksListView
-    throw UnimplementedError();
+  Future<Either<Failure, List<BookModel>>> fetchBooksListView() async {
+    try {
+      List<dynamic> data =
+          await api.get(url: 'https://potterapi-fedeperin.vercel.app/en/books');
+      List<BookModel> books = [];
+      for (var book in data) {
+        books.add(BookModel.fromJson(book));
+      }
+      return right(books);
+    } catch (e) {
+      if (e is DioException) {
+        return left(ServerFailure.fromDioException(e));
+      }
+
+      return left(ServerFailure(errMessage: e.toString()));
+    }
   }
 }
