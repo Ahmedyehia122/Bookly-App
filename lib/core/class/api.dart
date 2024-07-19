@@ -1,15 +1,44 @@
 import 'package:dio/dio.dart';
 
 class Api {
-  final Dio dio;
+  final Dio _dio;
 
-  Api({required this.dio});
+  Api({required Dio dio}) : _dio = dio;
 
-  Future<Map<String, dynamic>> get({required String url}) async {
-    Response response = await dio.get(url);
+  Future<dynamic> get({required String url}) async {
+    Response response = await _dio.get(url);
     return response.data;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // class Api {
 //   final Dio dio;
 
