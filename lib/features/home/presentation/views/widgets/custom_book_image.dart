@@ -3,13 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomBookImage extends StatelessWidget {
-  const CustomBookImage({super.key, this.book});
-
-  final BookModel? book;
-
+  const CustomBookImage({super.key, required this.imageUrl});
+  final String imageUrl;
   @override
   Widget build(BuildContext context) {
-    String? testImage = book!.cover;
     return AspectRatio(
       aspectRatio: 2.5 / 4,
       child: Container(
@@ -17,7 +14,7 @@ class CustomBookImage extends StatelessWidget {
           borderRadius: BorderRadius.circular(16.r),
           image: DecorationImage(
             fit: BoxFit.fill,
-            image: NetworkImage(testImage!),
+            image: NetworkImage(imageUrl),
           ),
         ),
       ),
