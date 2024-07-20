@@ -1,4 +1,4 @@
-import 'package:bookly_app/core/class/api.dart';
+import 'package:bookly_app/core/class/api_service.dart';
 import 'package:bookly_app/core/errors/failures.dart';
 import 'package:bookly_app/features/home/data/models/book_model.dart';
 import 'package:bookly_app/features/home/data/repos/home_repo.dart';
@@ -6,7 +6,7 @@ import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 
 class HomeRepoImpl extends HomeRepo {
-  final Api api;
+  final ApiService api;
 
   HomeRepoImpl({required this.api});
   @override

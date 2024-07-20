@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
-class Api {
+class ApiService {
   final Dio _dio;
 
-  Api({required Dio dio}) : _dio = dio;
+  ApiService({required Dio dio}) : _dio = dio;
 
   Future<dynamic> get({required String url, @required String? token}) async {
     Map<String, dynamic> headers = {};
