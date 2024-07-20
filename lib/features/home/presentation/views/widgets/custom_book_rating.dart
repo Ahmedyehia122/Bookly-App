@@ -4,7 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomBookRating extends StatelessWidget {
-  const CustomBookRating({super.key});
+  const CustomBookRating({super.key, this.pagesNum});
+  final String? pagesNum;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class CustomBookRating extends StatelessWidget {
         ),
         SizedBox(width: 5.w),
         Text(
-          '(2203)',
+          "($pagesNum) ",
           style: AppStyles.textStyle14,
         )
       ],

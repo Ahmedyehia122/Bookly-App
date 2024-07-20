@@ -1,3 +1,4 @@
+import 'package:bookly_app/core/constants/strings.dart';
 import 'package:bookly_app/core/widgets/custom_circular_indicator.dart';
 import 'package:bookly_app/core/widgets/custom_error_widget.dart';
 import 'package:bookly_app/features/home/data/models/book_model.dart';
@@ -29,8 +30,7 @@ class CustomBooksListView extends StatelessWidget {
                   return Padding(
                     padding: EdgeInsets.only(right: 10.w),
                     child: CustomBookImage(
-                      imageUrl: books[index].cover ??
-                          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtiJKuQkGMitVsqqDyAppVphB6JCTlpEl8_tytAzIVrG-z5NgLGQcQb8uCeQDF7ueRI0w&usqp=CAU',
+                      imageUrl: books[index].cover ?? AppStrings.errImage,
                     ),
                   );
                 },
