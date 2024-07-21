@@ -1,5 +1,7 @@
 import 'package:bookly_app/core/constants/fonts.dart';
+import 'package:bookly_app/core/constants/strings.dart';
 import 'package:bookly_app/core/constants/styles.dart';
+import 'package:bookly_app/features/home/data/models/book_model.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/Books_details_view_app_bar.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/button_action.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/custom_book_image.dart';
@@ -8,7 +10,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class BookDetailsSection extends StatelessWidget {
-  const BookDetailsSection({super.key});
+  const BookDetailsSection({super.key, required this.book});
+  final BookModel book;
 
   @override
   Widget build(BuildContext context) {
@@ -17,18 +20,18 @@ class BookDetailsSection extends StatelessWidget {
         const BookDetailsViewAppBar(),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 90.w, vertical: 8.h),
-          child: const CustomBookImage(
-            imageUrl:
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtiJKuQkGMitVsqqDyAppVphB6JCTlpEl8_tytAzIVrG-z5NgLGQcQb8uCeQDF7ueRI0w&usqp=CAU',
+          child: CustomBookImage(
+            imageUrl: book.cover ?? AppStrings.errImage,
           ),
         ),
         SizedBox(height: 15.h),
         Text(
-          'The Jungle Book',
+          book.title ?? '',
+          textAlign: TextAlign.center,
           style: AppStyles.textStyle30,
         ),
         Text(
-          'Rudyadr Kipling',
+          book.releaseDate ?? "",
           style: AppStyles.textStyle20.copyWith(
             fontFamily: AppFonts.playFairDisplay,
             color: Colors.white.withOpacity(.7),
@@ -37,7 +40,7 @@ class BookDetailsSection extends StatelessWidget {
         ),
         SizedBox(height: 10.h),
         const CustomBookRating(),
-        SizedBox(height: 30.h),
+        SizedBox(height: 20.h),
         const ButtonAction(),
       ],
     );
