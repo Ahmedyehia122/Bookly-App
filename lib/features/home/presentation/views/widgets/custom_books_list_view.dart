@@ -1,3 +1,4 @@
+import 'package:bookly_app/core/constants/routes.dart';
 import 'package:bookly_app/core/constants/strings.dart';
 import 'package:bookly_app/core/widgets/custom_loading_indicator.dart';
 import 'package:bookly_app/core/widgets/custom_error_widget.dart';
@@ -7,6 +8,7 @@ import 'package:bookly_app/features/home/presentation/views/widgets/custom_book_
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomBooksListView extends StatelessWidget {
   const CustomBooksListView({super.key});
@@ -29,8 +31,14 @@ class CustomBooksListView extends StatelessWidget {
                 itemBuilder: (BuildContext context, int index) {
                   return Padding(
                     padding: EdgeInsets.only(right: 10.w),
-                    child: CustomBookImage(
-                      imageUrl: books[index].cover ?? AppStrings.errImage,
+                    child: GestureDetector(
+                      onTap: () {
+                        GoRouter.of(context).push(AppRoutes.kBookDetailsView,
+                            extra: books[index]);
+                      },
+                      child: CustomBookImage(
+                        imageUrl: books[index].cover ?? AppStrings.errImage,
+                      ),
                     ),
                   );
                 },
