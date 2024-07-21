@@ -39,7 +39,9 @@ class BookDetailsSection extends StatelessWidget {
           ),
         ),
         SizedBox(height: 10.h),
-        const CustomBookRating(),
+        CustomBookRating(
+          pagesNum: book.pages.toString(),
+        ),
         SizedBox(height: 20.h),
         const ButtonAction(),
       ],
