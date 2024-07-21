@@ -46,15 +46,9 @@ class BookDetailsSection extends StatelessWidget {
         SizedBox(height: 20.h),
         ButtonAction(
           onPressed: () {
-            if (book.number == 1) {
-              urlLauncher(url: AppStrings.hBook1Url);
-            } else if (book.number == 2) {
-            } else if (book.number == 3) {
-            } else if (book.number == 4) {
-            } else if (book.number == 5) {
-            } else if (book.number == 6) {
-            } else if (book.number == 7) {
-            } else if (book.number == 8) {}
+            urlLauncher(
+              url: AppStrings.harryBotterbooksUrl,
+            );
           },
         ),
       ],
