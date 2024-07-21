@@ -1,5 +1,5 @@
 import 'package:bookly_app/core/constants/strings.dart';
-import 'package:bookly_app/core/widgets/custom_circular_indicator.dart';
+import 'package:bookly_app/core/widgets/custom_loading_indicator.dart';
 import 'package:bookly_app/core/widgets/custom_error_widget.dart';
 import 'package:bookly_app/features/home/data/models/book_model.dart';
 import 'package:bookly_app/features/home/presentation/manager/similar_books_cubit/similar_books_cubit.dart';
@@ -39,7 +39,7 @@ class SimilarBooksListView extends StatelessWidget {
         } else if (state is SimilarBooksFailure) {
           return CustomErrorWidget(errorMessage: state.errMessage);
         } else {
-          return const CustomCircularIndicator();
+          return const CustomLoadingIndicator();
         }
       },
     );

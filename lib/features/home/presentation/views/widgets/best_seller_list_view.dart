@@ -1,4 +1,4 @@
-import 'package:bookly_app/core/widgets/custom_circular_indicator.dart';
+import 'package:bookly_app/core/widgets/custom_loading_indicator.dart';
 import 'package:bookly_app/core/widgets/custom_error_widget.dart';
 import 'package:bookly_app/features/home/data/models/book_model.dart';
 import 'package:bookly_app/features/home/presentation/manager/best_seller_books_list_view/best_seller_books_list_view_cubit.dart';
@@ -32,7 +32,7 @@ class BestSellerListView extends StatelessWidget {
           );
         } else {
           return const SliverToBoxAdapter(
-            child: CustomCircularIndicator(),
+            child: CustomLoadingIndicator(),
           );
         }
       },
