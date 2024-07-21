@@ -50,4 +50,25 @@ class HomeRepoImpl extends HomeRepo {
       return left(ServerFailure(errMessage: e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, List<BookModel>>> fetchSimilarBooksListView() async {
+    try {
+      // ignore: missing_required_param
+      List<dynamic> data = await apiService.get(url: AppStrings.endpoit);
+
+      List<BookModel> books = [];
+
+      for (var book in data) {
+        books.add(BookModel.fromJson(book));
+      }
+      return right(books);
+    } catch (e) {
+      if (e is DioException) {
+        return left(ServerFailure.fromDioException(e));
+      }
+
+      return left(ServerFailure(errMessage: e.toString()));
+    }
+  }
 }
