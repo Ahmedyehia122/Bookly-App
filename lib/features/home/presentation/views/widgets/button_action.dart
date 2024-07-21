@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ButtonAction extends StatelessWidget {
-  const ButtonAction({super.key});
+  const ButtonAction({super.key, required this.onPressed});
+  final void Function() onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +27,7 @@ class ButtonAction extends StatelessWidget {
           ),
           Expanded(
             child: CustomButton(
+              onPressed: onPressed,
               buttonName: 'Free preview',
               backGroundColor: Colors.orange[800],
               textColor: Colors.white,

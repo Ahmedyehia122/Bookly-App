@@ -1,6 +1,7 @@
 import 'package:bookly_app/core/constants/fonts.dart';
 import 'package:bookly_app/core/constants/strings.dart';
 import 'package:bookly_app/core/constants/styles.dart';
+import 'package:bookly_app/core/functions/launch_url.dart';
 import 'package:bookly_app/features/home/data/models/book_model.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/Books_details_view_app_bar.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/button_action.dart';
@@ -43,7 +44,19 @@ class BookDetailsSection extends StatelessWidget {
           pagesNum: book.pages.toString(),
         ),
         SizedBox(height: 20.h),
-        const ButtonAction(),
+        ButtonAction(
+          onPressed: () {
+            if (book.number == 1) {
+              urlLauncher(url: AppStrings.hBook1Url);
+            } else if (book.number == 2) {
+            } else if (book.number == 3) {
+            } else if (book.number == 4) {
+            } else if (book.number == 5) {
+            } else if (book.number == 6) {
+            } else if (book.number == 7) {
+            } else if (book.number == 8) {}
+          },
+        ),
       ],
     );
   }
