@@ -15,7 +15,7 @@ class ButtonAction extends StatelessWidget {
         children: [
           Expanded(
             child: CustomButton(
-              buttonName: '99.89\$',
+              buttonName: 'Free',
               backGroundColor: Colors.white,
               textColor: Colors.black,
               fontSize: 18.sp,
