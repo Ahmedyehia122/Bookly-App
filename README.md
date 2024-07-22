@@ -13,9 +13,9 @@ The Harry Potter Books and Audio app provides free access to read and listen to 
   ## 📸 Screen Record
 
   <video src="https://github.com/user-attachments/assets/fe383f83-8936-4a33-968a-c2552f2a522d" ></video>
-  <video src="https://github.com/user-attachments/assets/3758dee8-e4a1-4d73-b454-5c446b7a195e" ></video>
-  <video src="https://github.com/user-attachments/assets/8f99481d-ee06-4843-88b3-0c93197a9f87" ></video>
-  <video src="https://github.com/user-attachments/assets/bbb2b336-b791-45fe-92c9-aa5659b16aa9" ></video>
+  <video src="https://github.com/user-attachments/assets/5d57017c-b5d0-4296-961a-a0d4547d9630" ></video>
+  <video src="https://github.com/user-attachments/assets/8b5a5d4f-a9bc-4c81-a3f6-146b2d54a858" ></video>
+  <video src="https://github.com/user-attachments/assets/6a865246-054f-479f-810a-519cd33dec96" ></video>
 
    <br/>
 
