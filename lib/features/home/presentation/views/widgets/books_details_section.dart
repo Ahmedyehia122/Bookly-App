@@ -47,6 +47,7 @@ class BookDetailsSection extends StatelessWidget {
         ButtonAction(
           onPressed: () {
             urlLauncher(
+              context: context,
               url: AppStrings.harryBotterbooksUrl,
             );
           },
