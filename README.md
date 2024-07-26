@@ -1,4 +1,4 @@
-# 😊 Harry Potter Books App
+# 😊 Harry Potter Books App (MVVM)
 
 The Harry Potter Books and Audio app provides free access to read and listen to the full Harry Potter book series. The user-friendly app allows you to seamlessly switch between reading the text and listening to high-quality audio narrations.
  
